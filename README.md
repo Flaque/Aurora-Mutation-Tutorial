@@ -22,7 +22,8 @@ https://atom.io/
 https://code.visualstudio.com/
 
 Here is an example on how to mutate the editor of Aurora to turn it purple
-```import React from "react";
+```javascript
+import React from "react";
 import styled from "styled-components";
 import Editor from "draft-js";
 
@@ -48,7 +49,8 @@ module.exports.mutations = {
 };
 ```
 Here is an example on how to mutate the frame of Aurora to replace it with a flying cat gif
-```import React from "react";
+```javascript
+import React from "react";
 import styled from "styled-components";
 
 const EVERYWHERE = styled.img`
@@ -85,7 +87,7 @@ For more information about the React technique used to write mutations check thi
 Webpack is a bundler, and we’re going to use it to bundle your mutation once you have written it. You can install Webpack by entering this onto your command line
 `npm install webpack -g`
 Next you’ll have to create a webpack.config.js file. This file will tell webpack what it should do. Here is an example of what it should look like.
-```
+```javascript
 const path = require("path");
 
 module.exports = {
@@ -108,7 +110,7 @@ Then, you’ll have to bundle in react and styled components by running the foll
 `npm install --save react styled-components`
 
 Your `package.json` file should now look something like this
-```
+```json
 {
   "name": "aurora-mutate-purple-editor",
   "version": "1.0.0",
